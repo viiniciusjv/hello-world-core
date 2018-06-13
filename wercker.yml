@@ -22,7 +22,7 @@ build:
 deploy:
   steps:
     - internal/docker-push:
-        username: viiniciusjv
+        username: viiniciusjvX
         password: _159632vJv_
         tag: latest
         repository: viiniciusjv/hello-world-core
