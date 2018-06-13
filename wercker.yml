@@ -22,9 +22,9 @@ build:
 deploy:
   steps:
     - internal/docker-push:
-        username: $USERNAME
-        password: $PASSWORD
+        username: viiniciusjv
+        password: _159632vJv_
         tag: latest
-        repository: dotnetcoreservices/hello-world
+        repository: viiniciusjv/hello-world-core
         registry: https://registry.hub.docker.com
 entrypoint: "/pipeline/source/app/docker_entrypoint.sh"
