@@ -21,11 +21,16 @@ build:
           cd $WERCKER_OUTPUT_DIR/app
 deploy:
   steps:
-    - internal/docker-push:
-        username: $usuario_docker_hub
-        password: $senha_docker_hub
-        tag:latest
-        repository:viiniciusjv/hello-world-core
-        registry: https://registry.hub.docker.com
 
+
+deploy:
+  steps:
+    - nhuray/docker-push:
+        image: tutum.co/nhuray/myimage:${WERCKER_GIT_COMMIT:0:7}
+        registry: https://registry.hub.docker.com
+        email: nicolas.huray@gmail.com
+        password: *****
+        username: nhuray
+
+https://registry.hub.docker.com
 entrypoint: ["dotnet", "hello-world.dll"]
