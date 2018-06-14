@@ -28,4 +28,4 @@ deploy:
         repository:viiniciusjv/hello-world-core
         registry: https://registry.hub.docker.com
 
-entrypoint: ["dotnet", "hello-world.dll"]
+entrypoint: ["dotnet", " hello-world.dll"]
